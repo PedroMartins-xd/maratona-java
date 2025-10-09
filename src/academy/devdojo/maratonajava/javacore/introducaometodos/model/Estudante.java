@@ -38,4 +38,10 @@ public class Estudante {
     public void setSexo(char sexo) {
         this.sexo = sexo;
     }
+
+    public void imprime() {
+        System.out.println(this.nome);
+        System.out.println(this.idade);
+        System.out.println(this.sexo);
+    }
 }
