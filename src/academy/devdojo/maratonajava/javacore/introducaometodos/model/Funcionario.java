@@ -56,5 +56,5 @@ public class Funcionario {
             media /= salarios.length;
         }
         return media;
-    }   
+    }
 }
