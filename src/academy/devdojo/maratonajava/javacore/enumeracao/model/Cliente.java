@@ -3,11 +3,21 @@ package academy.devdojo.maratonajava.javacore.enumeracao.model;
 public class Cliente {
 
     private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
     private String nome;
 
-    public Cliente(TipoCliente tipoCliente, String nome) {
+    public Cliente(TipoCliente tipoCliente, TipoPagamento tipoPagamento, String nome) {
         this.tipoCliente = tipoCliente;
+        this.tipoPagamento = tipoPagamento;
         this.nome = nome;
+    }
+
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 
     public TipoCliente getTipoCliente() {
@@ -29,7 +39,9 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "tipoCliente=" + tipoCliente +
+                "tipoCliente=" + tipoCliente.NOMERELATORIO +
+                ", tipoClienteInt=" + tipoCliente.VALOR +
+                ", tipoPagamento=" + tipoPagamento +
                 ", nome='" + nome + '\'' +
                 '}';
     }
