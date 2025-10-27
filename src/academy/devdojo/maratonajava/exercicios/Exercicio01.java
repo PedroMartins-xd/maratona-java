@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.introducao;
+package academy.devdojo.maratonajava.exercicios;
 
 import java.util.Scanner;
 
@@ -25,5 +25,7 @@ public class Exercicio01 {
         } else {
             System.out.println("A soma dos numeros A e B não são maior que C");
         }
+
+        sc.close();
     }
 }
