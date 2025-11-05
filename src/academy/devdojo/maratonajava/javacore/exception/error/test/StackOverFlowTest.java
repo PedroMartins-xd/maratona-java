@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.exception.test;
+package academy.devdojo.maratonajava.javacore.exception.error.test;
 
 public class StackOverFlowTest {
     public static void main(String[] args) {
